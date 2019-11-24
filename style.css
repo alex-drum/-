@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("Fonts/MyriadPro-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Myriad Pro";
+}
+
+body a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100vw;
+}
+.header__top {
+  padding-top: 30px;
+  background-image: url("img/main-bck.jpg");
+  min-height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right -65px;
+  display: flex;
+  justify-content: space-between;
+}
+.header h1 {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 900;
+}
+.header h3 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+}
+.header__content {
+  padding-top: 21px;
+}
+.header__content button {
+  width: 278px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #008dcd;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 17px;
+  border: none;
+}
+
+.logo {
+  height: min-content;
+}
+.logo__white {
+  width: 100px;
+}
+
+.menu__ul {
+  display: none;
+}
+
+@media screen and (min-width: 375px) {
+  .header__top {
+    background-position: bottom right -35px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .header__top {
+    background-position: bottom right -10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 35px;
+  }
+
+  .header {
+    min-height: 415px;
+    background-image: url("img/main-bck.jpg");
+    background-size: cover;
+    background-position: bottom right -118px;
+  }
+  .header__top {
+    min-height: 0;
+    height: fit-content;
+    justify-content: flex-start;
+    background: none;
+  }
+  .header__content {
+    padding-top: 55px;
+  }
+  .header__content h1 {
+    color: #ffffff;
+    font-size: 44px;
+    font-weight: 900;
+    margin-bottom: 18px;
+  }
+  .header__content h3 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .header__content button {
+    margin-top: 36px;
+  }
+
+  .nav {
+    flex-grow: 1;
+    display: flex;
+    padding-top: 5px;
+    height: 34px;
+    box-sizing: border-box;
+  }
+
+  .menu__mini {
+    display: none;
+  }
+
+  .menu__ul {
+    display: flex;
+    list-style-type: none;
+    flex-grow: 1;
+    justify-content: space-around;
+  }
+  .menu__link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

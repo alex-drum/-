@@ -1,0 +1,259 @@
+@font-face
+  font-family: "Myriad Pro"
+  src: url("Fonts/MyriadPro-Regular.ttf")
+
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: "Myriad Pro"
+
+body a
+  text-decoration: none
+
+.container
+  max-width: 1440px
+  min-width: 320px
+  margin: 0 auto
+  padding-left: 20px
+  padding-right: 20px
+  box-sizing: border-box
+
+.header
+  width: 100vw
+  &__top
+    padding-top: 30px
+    background-image: url("img/main-bck.jpg")
+    min-height: 280px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom right -65px
+    display: flex
+    justify-content: space-between
+  & h1
+    color: #000000
+    font-size: 32px
+    font-weight: 900
+  & h3
+    color: #000000
+    font-size: 24px
+    font-weight: 700
+  &__content
+    padding-top: 21px
+    & button
+      width: 278px
+      height: 48px
+      border-radius: 30px
+      background-color: #008dcd
+      color: #ffffff
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      margin-top: 17px
+      border: none
+
+.logo
+  height: min-content
+  &__white
+    width: 100px
+
+.menu__ul
+  display: none
+
+@media screen and (min-width: 375px)
+  .header__top
+    background-position: bottom right -35px
+
+@media screen and (min-width: 425px)
+  .header__top
+    background-position: bottom right -10px
+
+@media screen and (min-width: 768px)
+  .container
+    padding-left: 25px
+    padding-right: 35px
+  .header
+    min-height: 415px
+    background-image: url("img/main-bck.jpg")
+    background-size: cover
+    background-position: bottom right -118px
+    &__top
+      min-height: 0
+      height: fit-content
+      justify-content: flex-start
+      background: none
+    &__content
+      padding-top: 55px
+      & h1
+        color: #ffffff
+        font-size: 44px
+        font-weight: 900
+        margin-bottom: 18px
+      & h3
+        color: #ffffff
+        font-size: 28px
+        font-weight: 700
+      & button
+        margin-top: 36px
+
+  .nav
+    flex-grow: 1
+    display: flex
+    padding-top: 5px
+    height: 34px
+    box-sizing: border-box
+
+  .menu
+    &__mini
+      display: none
+  .menu
+    &__ul
+      display: flex
+      list-style-type: none
+      flex-grow: 1
+      justify-content: space-around
+    &__link
+      color: #ffffff
+      font-size: 14px
+      font-weight: 400
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//.menu-mini
+//  display: block
+//  position: relative
+//  height: 29px
+//  background: none
+//  border: none
+//.menu-mini:focus .drop
+//  top: 0
+//  left: 0
+//
+//.quit-button
+//  line-height: 30px
+//  font-size: 52px
+//  padding-top: 10px
+//  color: #000000
+//
+//.drop
+//    position: absolute
+//    top: -9999px
+//    left: -9999px
+//    z-index: 1
+//    width: 85vw
+//    height: 90vh
+//    background-color: #ffffff
+//    display: flex
+//    flex-direction: column
+//    padding: 20px 24px
+//    &__top
+//      display: flex
+//      justify-content: space-between
+//    &_nav
+//      flex-grow: 1
+//      & ul
+//        list-style-type: none
+//        text-align: left
+//        padding-top: 21px
+//        display: flex
+//        flex-direction: column
+//        justify-content: space-around
+//        margin-bottom: 10px
+//        & li a
+//          color: #000000
+//          font-size: 18px
+//    &__footer
+//      display: flex
+//      justify-content: space-around
+//      & a
+//        width: 36px
+//        height: 36px
+//        color: #ffffff
+//        font-size: 26px
+//        line-height: 36px
+//        border-radius: 50%
+//        background-color: #008dcd
+//        text-align: center
+//
+//.feedback
+//  & h4
+//    color: #000000
+//    font-size: 18px
+//    font-weight: 600
+//  &__input-phone-number
+//    width: 237px
+//    height: 43px
+//    border-radius: 30px
+//    border: 1px solid #363636
+//    padding-left: 44px
+//    line-height: 43px
+//    color: #363636
+//    font-size: 14px
+//    font-weight: 400
+//  &::-moz-placeholder
+//    color: #363636
+//  &::-webkit-input-placeholder
+//    color: #363636
+//  & button
+//    width: 278px
+//    height: 48px
+//    border-radius: 30px
+//    background-color: #008dcd
+//    color: #ffffff
+//    font-size: 16px
+//    font-weight: 700
+//    text-transform: uppercase
+//    margin-top: 17px
+//    border: none
+//  & label
+//    color: #9e9e9e
+//    font-size: 10px
+//    font-weight: 400
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
